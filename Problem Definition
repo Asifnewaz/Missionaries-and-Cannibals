@@ -1,0 +1,21 @@
+# Missionaries-and-Cannibals
+The problem
+Missionaries and Cannibals is a problem where you initially have 3 missionaries, 3 cannibals and a boat on one side of a river. The goal is to move all cannibals and missionaries to the other side of the river given some rules:
+•	If any side of the river has more cannibals than missionaries, you loose. The cannibals have a meat fest!
+•	The boat only moves if it has one or two passengers, you can choose who’s on it. The boat doesn’t move without anyone on it.
+
+Start and finish states
+The problem has an initial state where everyone is on the East side of the river and we reach a solution when everyone is on the West side of the river.
+
+Changing states
+It’s not hard to see that the state changes when the boat takes passengers across the river. There are 5 possible moves:
+•	2 Cannibals
+•	2 Missionaries
+•	1 Cannibal
+•	1 Missionary
+•	1 Cannibal, 1 Missionary
+
+Valid states
+A new state is valid if:
+•	there are missionaries present on a given side of the river, there cannot be more cannibals than missionaries.
+•	the number of missionaries and cannibals on any given side has to be positive.
